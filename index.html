@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<link href="main.css" rel="stylesheet" type="text/css">
+<script src="scripts.js"></script>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>A Wild Collection</title>
+
+<div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google"><i class="fa fa-google"></i></a>
+    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+
+<style>
+    body 
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    
+    .tablink 
+    {
+        background-color: #5D5C61;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+    }
+
+    .tablink:hover 
+    {
+        background-color: #5D5C61;
+    }
+
+    /* Style the tab content */
+    .tabcontent 
+    {
+        color: white;
+        display: none;
+        padding: 50px;
+        text-align: center;
+    }
+
+    #Moose 
+    {
+        background-color: #E27D60;
+    }
+
+    #Cheetah 
+    {
+        background-color: #41B3A3;
+    }
+
+    #Whale 
+    {
+        background-color: #C38D9E;
+    }
+
+    #Cow 
+    {
+        background-color: #E8A87C;
+    }
+</style>
+</head>
+
+<body>
+    <div id="Moose" class="tabcontent">
+        <h1>Moose</h1>
+        <p>This is amoosing.</p>
+    </div>
+
+    <div id="Cheetah" class="tabcontent">
+        <h1>Cheetah</h1>
+        <p>The cheetah is faster dandelion.</p>
+    </div>
+
+    <div id="Whale" class="tabcontent">
+        <h1>Whale</h1>
+        <p>Whale.&nbsp;&nbsp;Whale.&nbsp;&nbsp;Whale.</p>
+    </div>
+
+    <div id="Cow" class="tabcontent">
+        <h1>Cow</h1>
+        <p>An udder day.&nbsp;&nbsp;An udder gallon.</p>
+    </div>
+
+    <button class="tablink" onclick="openAnimal('Moose', this, '#E27D60')" id="defaultOpen">Moose</button>
+    <button class="tablink" onclick="openAnimal('Cheetah', this, '#41B3A3')">Cheetah</button>
+    <button class="tablink" onclick="openAnimal('Whale', this, '#C38D9E')">Whale</button>
+    <button class="tablink" onclick="openAnimal('Cow', this, '#E8A87C')">Cow</button>
+
+    <script>
+        function openAnimal(AnimalName, elmnt, color) 
+        {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) 
+            {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) 
+            {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(AnimalName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="images/vintage-camping-graphics-with-text/251.jpg">
+            <h3>Camping Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="images/hand-drawn-illustration-inspiring-lettering/20.jpg">
+            <h3>Handdrawn Camping Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="images/vintage-bear-illustration/423.jpg">
+            <h3>Vintage Bear Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+        <img src="images/wild-deer-logo-illustration (1)/80197.jpg">
+            <h3>Wild Bear Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="images/hand-drawn-illustration-with-mountain-landscape-inspiring-lettering (1)/22.jpg">
+            <h3>Mountain Landscape Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="images/forest-adventure-badge-design/260.jpg">
+            <h3>Forest Adventure Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="images/vintage-eagle-with-hand-drawn-lettering-slogan-wing-free/28.jpg">
+            <h3>Vintage Eagle Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="images/vintage-camping-badge-retro-style-with-mug-text/213.jpg">
+            <h3>Camping Badge</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="images/say-yes-new-adventures-vintage-style/30.jpg">
+            <h3>Adventure Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="images/dare-be-wild-text-with-wolf-background/2283628.jpg">
+            <h3>Daring Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="images/explore-more-quote-with-deer-silhouette/193.jpg">
+            <h3>Explore Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="images/2hand-drawn-illustration-with-mountain-landscape-inspiring-lettering/19.jpg">
+            <h3>Inspiration Poster</h3>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+</div>
+    
+<div class="footer">
+    <p>
+        | <a id="link" href="#">Sitemap</a> 
+        | <a id="link" href="#">Privacy Policy</a> 
+        | <a id="link" href="#">Terms of Use</a> 
+    </p>
+</div>
+
+</body>
+</html>
